@@ -17,7 +17,7 @@ export class AppComponent {
     constructor(private _svc: BoatService) { }
 
     getBoats(): void {
-      this._svc.getBoats()
+      this._svc.getBoat()
       .subscribe(data => this.boats = data)
     }
 
