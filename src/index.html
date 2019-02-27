@@ -7,8 +7,31 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
-  <app-root></app-root>
+    <div class="container">
+        <h3>Login</h3>              
+          <form id="loginForm">
+              <label for="username"><b>Username</b></label>
+              <input type="text" placeholder="Username" id="Username" name="Username" required>
+    
+              <label for="passwd"><b>Password</b></label>
+              <input type="password" placeholder="Password" id="Password" name="password" required>
+    
+              <input type="submit" id="login" value="login" class="btn btn-primary" />
+              <a href=""><button type="button" class="btn btn-primary">Register</button></a>
+          </form>
+      </div>
+
+  <div class="container">
+    <app-root></app-root>
+  </div>
+  
 </body>
 </html>

@@ -1,3 +1,5 @@
+import {BoatService} from './services/boat.service';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,9 +12,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    
   ],
-  providers: [],
+  providers: [BoatService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
